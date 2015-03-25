@@ -19,12 +19,10 @@ object toplevel {
     .initialState(State(""))
     .backend(new Backend(_))
     .render((_, state, backend) =>
-      div(className := "container",
-        div(className := "row",
-          div(className := "col-md-4",
-            Search(ValueLink(state.query, backend.onChange)),
-            Items(ItemFilter(countries, state.query))
-          )
+      div(className := "row",
+        div(className := "col-md-4",
+          Search(ValueLink(state.query, backend.onChange)),
+          Items(ItemFilter(countries, state.query))
         )
       )
     )
