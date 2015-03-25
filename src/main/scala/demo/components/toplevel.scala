@@ -8,6 +8,7 @@ import org.scalajs.dom.ext.Ajax
 
 import search._
 import items._
+import piechart._
 
 
 object toplevel {
@@ -22,9 +23,13 @@ object toplevel {
     .initialState(State("", List()))
     .backend(new Backend(_))
     .render((_, state, backend) =>
-      div(className := "row",
-        div(className := "col-md-4",
-          Search(ValueLink(state.query, backend.onChange)),
+      div(
+        div(className := "row",
+          div(className := "col-md-4",
+            Search(ValueLink(state.query, backend.onChange))
+          )
+        ),
+        div(className := "row",
           Items(ItemFilter(state.countries, state.query))
         )
       )
