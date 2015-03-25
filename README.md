@@ -22,7 +22,7 @@ Run the tests
 
 To run the test suite, execute the task `test`. If you have installed
 [Node.js](http://nodejs.org/), you can also run `fastOptStage::test` which is
-faster. Not that there are any right now...
+faster.
 
 The fully optimized version
 ---------------------------
