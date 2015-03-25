@@ -16,5 +16,10 @@ skip in packageJSDependencies := false
 
 libraryDependencies ++= Seq(
     "org.scala-js" %%% "scalajs-dom" % "0.8.0",
-    "com.lihaoyi" %%% "utest" % "0.3.0" % "test"
+    "com.lihaoyi" %%% "utest" % "0.3.0" % "test",
+    "com.github.japgolly.scalajs-react" %%% "core" % "0.8.2",
+    "com.github.japgolly.scalajs-react" %%% "extra" % "0.8.2",
+    "com.github.japgolly.scalajs-react" %%% "test" % "0.8.2" % "test"
 )
+
+jsDependencies += "org.webjars" % "react" % "0.12.1" / "react-with-addons.js" commonJSName "React"
