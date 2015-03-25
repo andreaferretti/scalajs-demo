@@ -4,7 +4,7 @@ import utest._
 
 
 object DemoTest extends TestSuite {
-  import Main._
+  import components.items.matches
   def tests = TestSuite {
     'DemoMatch {
       assert(matches("Hello, Scala!", "scala"))

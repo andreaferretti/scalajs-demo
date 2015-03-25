@@ -23,3 +23,5 @@ libraryDependencies ++= Seq(
 )
 
 jsDependencies += "org.webjars" % "react" % "0.12.1" / "react-with-addons.js" commonJSName "React"
+
+requiresDOM := true

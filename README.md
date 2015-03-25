@@ -1,5 +1,5 @@
-Example application written in Scala.js
-=======================================
+Example application written in Scala.js and React
+=================================================
 
 This is a barebone example of an application written in
 [Scala.js](http://www.scala-js.org/).

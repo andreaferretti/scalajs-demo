@@ -11,7 +11,5 @@ import components.toplevel._
 object Main extends js.JSApp {
   def defer(F: => Unit) = window.setTimeout({ () => F }, 0)
 
-  def matches(s: String, query: String) = s.toLowerCase contains query
-
-  def main = defer(React.render(TopLevel("Hello, Scala!"), document.body))
+  def main = defer(React.render(TopLevel(()), document.body))
 }
